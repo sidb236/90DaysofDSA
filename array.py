@@ -1,5 +1,5 @@
 
-#Create an array in python
+# Create an array in python
 
 from array import *
 import numpy as np
@@ -10,19 +10,28 @@ arr2 = array('d', [1.2, 2.3, 3.4, 4.5, 5.6])
 print(arr1)
 print(arr2)
 
-#traverse an Array
+# traverse an Array
+
 
 def traverseArray(array):
     for i in array:
         print(i)
 
+
 traverseArray(arr1)
 
-#insert into a array
+# insert into a array
 my_array1 = array('i', [1, 2, 3, 4])
 print(my_array1)
 
 my_array1.insert(0, 7)
 print(my_array1)
 
-def access
+
+def accessElement(array, index):
+    if index> len(array):
+        print("The index provided exceeds the length of array")
+    else:
+        print(array[index])
+
+accessElement(arr1, 6)
