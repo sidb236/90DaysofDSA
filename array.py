@@ -49,7 +49,6 @@ def linear_search(arr1, target):
     for i in range(len(arr1)):
         if arr1[i] ==target:
             print("Found the element {} at {}".format(target, i))
-
     return -1     #You can also raise ValueError(" Element {} not found in the array".format(target)),
                   # you can also return False
 
@@ -57,3 +56,27 @@ def linear_search(arr1, target):
 # Input Value in the linear_search function
 linear_search(arr1, 3)
 
+
+def delete_element(arr, target):
+    try:
+        arr.remove(target)          # Time complexity O(n)
+    except Exception as e:
+        print(e)
+
+
+delete_element(arr1, 4)
+print(arr1)
+
+
+ # Time and space complexity of array operations:
+ # Operation                    Time Complexity         Space Complexity
+ # Creating an empty array          O(1)                    O(1)
+ # Creating an array with           O(n)                    O(n)
+    # elements
+ # Insering a value in an           O(n)                    O(1)
+    #array
+ # Traversing a given array         O(n)                    O(1)
+ # Acessing a given cell            O(1)                    O(1)
+ # Acessing a given value           O(1)                    O(1)
+ # Searching a given value          O(n)                    O(1)
+ # Deleting a given value           O(n)                    O(1)
