@@ -80,3 +80,4 @@ print(arr1)
  # Acessing a given value           O(1)                    O(1)
  # Searching a given value          O(n)                    O(1)
  # Deleting a given value           O(n)                    O(1)
+
